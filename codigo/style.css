@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(98, 198, 223);
+}
+#cartas{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all .5s;
+}
+
+.face{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    border: 30px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+}
+#frente{
+    background-color: rgb(158, 0, 250);
+    transform: rotateY(180deg);
+}
+#costa{
+    background-color: rgb(0, 0, 70);
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
